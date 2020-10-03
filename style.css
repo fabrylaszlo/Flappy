@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+}
+
+#alja {
+    position: absolute;
+    bottom: 0;
+    background-image: url('img/bottom-background.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    height: 50px;
+    animation: moveleft 3000s infinite linear;
+    -webkit-animation: moveleft 3000s infinite linear;
+}
+
+.bird {
+    position: absolute;
+    bottom: 60px;
+    background-image: url('img/flappy-bird.png');
+    height: 45px;
+    width: 60px;
+}
+
+.cso {
+    position: absolute;
+    left: 1200px;
+    bottom: 50px;
+    width: 60px;
+    height: 60px;
+    background-image: url('img/flappybird-pipe.png');
+}
+
+.cso2 {
+    position: absolute;
+    left: 1200px;
+    top: 0;
+    object-fit: fill;
+    width: 60px;
+    height: 200px;
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url('img/flappybird-pipetop.png');
+}
+
+#sky {
+    position: absolute;
+    bottom: 50px;
+    background-image: url('img/fb-game-background.png');
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes moveleft {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+}
+
+@-webkit-keyframes moveleft {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+}
